@@ -69,9 +69,9 @@ class MainWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text('이메일 : ${user.providerData[0].email}'),
-          const SizedBox(height: 30,),
+          const SizedBox(height: 20,),
           Text('로그인 경로 : ${user.providerData[0].providerId}'),
-          const SizedBox(height: 30,),
+          const SizedBox(height: 20,),
           ElevatedButton(
             onPressed: () {
               FirebaseAuth.instance.signOut();
@@ -131,7 +131,12 @@ class LoginWidget extends StatelessWidget {
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.green
             ),
-            onPressed: () => signInWithNaver(),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const NaverSampleScreen()),
+              );
+            },
             child: const Text('네이버 로그인')
           ),
           const SizedBox(height: 16,),

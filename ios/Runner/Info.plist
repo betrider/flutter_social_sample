@@ -27,7 +27,10 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
+				<!-- facebook login -->
 				<string>fb679587277286825</string>
+				<!-- naver login -->
+        		<string>socialloginapp</string>
 			</array>
 		</dict>
 		<dict>
@@ -49,9 +52,51 @@
 	<string>Facebook</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+		<!-- facebook login -->
 		<string>fbapi</string>
 		<string>fb-messenger-share-api</string>
+		<!-- naver login -->
+		<string>naversearchapp</string>
+        <string>naversearchthirdlogin</string>
 	</array>
+	<key>naverServiceAppUrlScheme</key>
+    <string>socialloginapp</string>
+	
+    <!-- naver client_id -->
+    <key>naverConsumerKey</key>
+    <string>ZdBaohYOLVwHNBH_jA0u</string>
+    
+    <!-- naver client_secret -->
+    <key>naverConsumerSecret</key>
+    <string>dYWEzMBbR7</string>
+
+    <key>naverServiceAppName</key>
+    <string>socialloginapp</string>
+
+	<!-- http allows configurations -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+       <key>NSAllowsArbitraryLoads</key>
+       <true/>
+       <key>NSExceptionDomains</key>
+       <dict>
+          <key>naver.com</key>
+          <dict>
+             <key>NSExceptionRequiresForwardSecrecy</key>
+             <false/>
+             <key>NSIncludesSubdomains</key>
+             <true/>
+          </dict>
+          <key>naver.net</key>
+          <dict>
+             <key>NSExceptionRequiresForwardSecrecy</key>
+             <false/>
+             <key>NSIncludesSubdomains</key>
+             <true/>
+          </dict>
+        </dict>
+    </dict>
+
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- facebook login -->
     <string name="facebook_app_id">679587277286825</string>
     <string name="facebook_client_token">4b3abbc5521cfa56a2d656dc267dd77a</string>
+    <!-- facebook login -->
+
+    <!-- naver login -->
+    <string name="client_id">ZdBaohYOLVwHNBH_jA0u</string>
+    <string name="client_secret">dYWEzMBbR7</string>
+    <string name="client_name">socialloginapp</string>
+    <!-- naver login -->
 </resources>
