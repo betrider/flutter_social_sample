@@ -88,7 +88,7 @@ class LoginWidget extends StatelessWidget {
         children: [
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.blue
+              backgroundColor: Colors.red
             ),
             child: const Text('구글 로그인'),
             onPressed: () => signInWithGoogle()
@@ -96,7 +96,7 @@ class LoginWidget extends StatelessWidget {
           const SizedBox(height: 16,),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.red
+              backgroundColor: Colors.blue
             ),
             onPressed: () => signInWithFacebook(),
             child: const Text('페이스북 로그인')
