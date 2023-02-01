@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +13,7 @@ import 'package:flutter_social_sample/social/sign_in_with_naver.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await Firebase.initializeApp(name: 'test', options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
@@ -106,14 +108,16 @@ class LoginWidget extends StatelessWidget {
             onPressed: () => signInWithFacebook(),
             child: const Text('페이스북 로그인')
           ),
-          const SizedBox(height: 16,),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.white
+          if(Platform.isIOS)...[
+            const SizedBox(height: 16,),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.white
+              ),
+              onPressed: () => signInWithApple(),
+              child: const Text('애플 로그인', style: TextStyle(color: Colors.black),)
             ),
-            onPressed: () => signInWithApple(),
-            child: const Text('애플 로그인', style: TextStyle(color: Colors.black),)
-          ),
+          ],
           const SizedBox(height: 16,),
           ElevatedButton(
             style: ElevatedButton.styleFrom(

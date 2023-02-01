@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>868308849637-8a581l3q1s3u854q19bvp9bib1k7b2ri.apps.googleusercontent.com</string>
+	<string>53973267839-ne27dtumf1d452h9a1sbqu1hr7c1g5dl.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.868308849637-8a581l3q1s3u854q19bvp9bib1k7b2ri</string>
+	<string>com.googleusercontent.apps.53973267839-ne27dtumf1d452h9a1sbqu1hr7c1g5dl</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>53973267839-llpd9ka2j6k02tmbpcucfe9gpvkrpr6s.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCv-4eoxP64up91YDpW2Uq5euySLqdANnQ</string>
+	<string>AIzaSyCE5gvKBRN75vNV3yeZ3i9LZROVagqED8o</string>
 	<key>GCM_SENDER_ID</key>
-	<string>868308849637</string>
+	<string>53973267839</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.flutterSocialSample</string>
+	<string>com.betrider.sociallogin</string>
 	<key>PROJECT_ID</key>
-	<string>flutter-social-login-sam-50272</string>
+	<string>flutter-social-login-example</string>
 	<key>STORAGE_BUCKET</key>
-	<string>flutter-social-login-sam-50272.appspot.com</string>
+	<string>flutter-social-login-example.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,7 +31,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:868308849637:ios:3174b14af6a93ef7e8550c</string>
+	<string>1:53973267839:ios:123732762484c17b3a564a</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 	    <dict>

@@ -50,21 +50,21 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBrEMu1EahUTC8iv4Z1DBNRl5ggDsVsPCw',
-    appId: '1:868308849637:android:5c5d1465185f5c1ce8550c',
-    messagingSenderId: '868308849637',
-    projectId: 'flutter-social-login-sam-50272',
-    storageBucket: 'flutter-social-login-sam-50272.appspot.com',
+    apiKey: 'AIzaSyDLJf_AMx2UYfWMqb88znNgq5ELGqzE8yw',
+    appId: '1:53973267839:android:bfd8054159cd45343a564a',
+    messagingSenderId: '53973267839',
+    projectId: 'flutter-social-login-example',
+    storageBucket: 'flutter-social-login-example.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCv-4eoxP64up91YDpW2Uq5euySLqdANnQ',
-    appId: '1:868308849637:ios:3174b14af6a93ef7e8550c',
-    messagingSenderId: '868308849637',
-    projectId: 'flutter-social-login-sam-50272',
-    storageBucket: 'flutter-social-login-sam-50272.appspot.com',
-    androidClientId: '868308849637-5s83l69nlkshibgm9tl9m1029aht1ctk.apps.googleusercontent.com',
-    iosClientId: '868308849637-8a581l3q1s3u854q19bvp9bib1k7b2ri.apps.googleusercontent.com',
-    iosBundleId: 'com.example.flutterSocialSample',
+    apiKey: 'AIzaSyCE5gvKBRN75vNV3yeZ3i9LZROVagqED8o',
+    appId: '1:53973267839:ios:123732762484c17b3a564a',
+    messagingSenderId: '53973267839',
+    projectId: 'flutter-social-login-example',
+    storageBucket: 'flutter-social-login-example.appspot.com',
+    androidClientId: '53973267839-llpd9ka2j6k02tmbpcucfe9gpvkrpr6s.apps.googleusercontent.com',
+    iosClientId: '53973267839-ne27dtumf1d452h9a1sbqu1hr7c1g5dl.apps.googleusercontent.com',
+    iosBundleId: 'com.betrider.sociallogin',
   );
 }
