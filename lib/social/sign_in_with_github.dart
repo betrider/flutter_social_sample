@@ -5,9 +5,9 @@ import 'package:github_sign_in/github_sign_in.dart';
 Future<UserCredential> signInWithGitHub(BuildContext context) async {
   // Create a GitHubSignIn instance
   final GitHubSignIn gitHubSignIn = GitHubSignIn(
-    clientId: 'clientId',
-    clientSecret: 'clientSecret',
-    redirectUrl: 'https://my-project.firebaseapp.com/__/auth/handler',
+    clientId: '3306bd6c9adccd0f1959',
+    clientSecret: '0fe1dd34b3dc4cb05975ea404232f4c34fa4edde',
+    redirectUrl: 'https://flutter-social-login-sam-50272.firebaseapp.com/__/auth/handler',
   );
 
   // Trigger the sign-in flow

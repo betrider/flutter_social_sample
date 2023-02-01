@@ -5,6 +5,8 @@ import 'package:flutter_social_sample/social/sign_in_with_apple.dart';
 import 'package:flutter_social_sample/social/sign_in_with_facebook.dart';
 import 'package:flutter_social_sample/social/sign_in_with_github.dart';
 import 'package:flutter_social_sample/social/sign_in_with_google.dart';
+import 'package:flutter_social_sample/social/sign_in_with_kakao.dart';
+import 'package:flutter_social_sample/social/sign_in_with_naver.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -63,7 +65,9 @@ class MainWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('${user.email}'),
+          Text('이메일 : ${user.providerData[0].email}'),
+          const SizedBox(height: 30,),
+          Text('로그인 경로 : ${user.providerData[0].providerId}'),
           const SizedBox(height: 30,),
           ElevatedButton(
             onPressed: () {
@@ -116,6 +120,22 @@ class LoginWidget extends StatelessWidget {
             ),
             onPressed: () => signInWithGitHub(context),
             child: const Text('깃허브 로그인')
+          ),
+          const SizedBox(height: 16,),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.green
+            ),
+            onPressed: () => signInWithNaver(),
+            child: const Text('네이버 로그인')
+          ),
+          const SizedBox(height: 16,),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.yellow
+            ),
+            onPressed: () => signInWithKakao(),
+            child: const Text('로그인 로그인', style: TextStyle(color: Colors.black))
           ),
         ],
       ),
