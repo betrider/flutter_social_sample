@@ -16,10 +16,10 @@ class _NaverSampleScreenState extends State<NaverSampleScreen> {
     result = await FlutterNaverLogin.logIn();
 
     if (result.status == NaverLoginStatus.loggedIn) {
-      // print('accessToken = ${result.accessToken}');
-      // print('id = ${result.account.id}');
-      // print('email = ${result.account.email}');
-      // print('name = ${result.account.name}');
+      print('accessToken = ${result.accessToken}');
+      print('id = ${result.account.id}');
+      print('email = ${result.account.email}');
+      print('name = ${result.account.name}');
 
       setState(() {
         _loginPlatform = LoginPlatform.naver;

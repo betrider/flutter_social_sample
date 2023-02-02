@@ -144,8 +144,13 @@ class LoginWidget extends StatelessWidget {
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.yellow
             ),
-            onPressed: () => signInWithKakao(),
-            child: const Text('로그인 로그인', style: TextStyle(color: Colors.black))
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const KakaoSampleScreen()),
+              );
+            },
+            child: const Text('카카오 로그인', style: TextStyle(color: Colors.black))
           ),
         ],
       ),
